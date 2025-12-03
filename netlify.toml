@@ -1,13 +1,29 @@
+<<<<<<< HEAD
 [build]
-  command = "cd client && npm install --legacy-peer-deps && npm run build"
-  publish = "client/.next"
-  functions = "netlify/functions"
+command = "cd client && npm install --legacy-peer-deps && npm run build"
+publish = "client/.next"
+functions = "netlify/functions"
 
 [build.environment]
-  NODE_VERSION = "20"
-  NODE_ENV = "production"
+NODE_VERSION = "20"
+NODE_ENV = "production"
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api"
-  status = 200
+from = "/api/*"
+to = "/.netlify/functions/api"
+status = 200
+=======
+[build]
+command = "cd client && npm install --legacy-peer-deps && npm run build"
+publish = "client/.next"
+functions = "netlify/functions"
+
+[build.environment]
+NODE_VERSION = "20"
+NODE_ENV = "production"
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/api"
+status = 200
+>>>>>>> 203a113f90e040fa36f74925daaade94739e0d14
